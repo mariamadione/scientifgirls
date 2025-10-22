@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scientifique Girls</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+    * { box-sizing: border-box; margin:0; padding:0; font-family:'Poppins', sans-serif; }
+    body { background-color:#fdf6fb; color:#333; line-height:1.6; }
+    header { background-color:#9b59b6; color:white; padding:40px 20px; text-align:center; }
+    header h1 { font-size:3em; }
+    header p { font-size:1.3em; margin-top:10px; }
+    nav { background-color:#8e44ad; display:flex; justify-content:center; flex-wrap:wrap; padding:15px; }
+    nav a { color:white; margin:5px 15px; text-decoration:none; font-weight:600; transition:0.3s; }
+    nav a:hover { color:#e91e63; }
+    section { padding:60px 20px; }
+    h2 { color:#8e44ad; margin-bottom:30px; text-align:center; }
+    .button { display:inline-block; padding:15px 30px; background-color:#e91e63; color:white; text-decoration:none; font-weight:bold; border-radius:10px; margin-top:20px; }
+    .courses, .testimonials { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .course, .testimonial { background-color:white; padding:25px; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.1); flex:1; min-width:250px; max-width:300px; text-align:center; }
+    .course h4 { color:#9b59b6; margin-bottom:10px; }
+    .testimonial p { font-style:italic; margin:15px 0 5px; }
+    .testimonial span { font-weight:bold; color:#8e44ad; }
+    form { background-color:white; padding:30px; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.1); max-width:600px; margin:auto; }
+    form input, form select, form textarea { width:100%; padding:12px; margin-bottom:15px; border-radius:8px; border:1px solid #ccc; font-size:1em; }
+    form input[type="submit"] { background-color:#e91e63; color:white; font-weight:bold; border:none; cursor:pointer; transition:0.3s; }
+    form input[type="submit"]:hover { background-color:#d81b60; }
+    @media(max-width:768px){ .courses, .testimonials{ flex-direction:column; align-items:center; } }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🔬 Scientifique Girls</h1>
+    <p>Apprendre, explorer, réussir</p>
+</header>
+
+<nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#cours">Cours</a>
+    <a href="#inscription">Inscription</a>
+    <a href="#apropos">À propos</a>
+    <a href="#contact">Contact</a>
+    <a href="#blog">Blog</a>
+</nav>
+
+<section id="accueil">
+    <h2>Bienvenue chez Scientifique Girls !</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">Nous accompagnons les filles de l’école élémentaire au lycée dans leur réussite scolaire grâce à des cours personnalisés à domicile ou en ligne. Que ce soit en maths, sciences, français ou autres matières, nous rendons l’apprentissage simple et amusant !</p>
+    <div style="text-align:center;"><a href="#inscription" class="button">S’inscrire maintenant</a></div>
+</section>
+
+<section id="cours">
+    <h2>Nos cours</h2>
+
+    <h3 style="text-align:center;">Élémentaire (CP → CM2)</h3>
+    <div class="courses">
+        <div class="course"><h4>Mathématiques</h4><p>Bases, calcul, logique et exercices adaptés à chaque niveau.</p></div>
+        <div class="course"><h4>Français</h4><p>Lecture, écriture, grammaire et orthographe.</p></div>
+        <div class="course"><h4>Sciences</h4><p>Découverte du monde et expériences simples.</p></div>
+    </div>
+
+    <h3 style="text-align:center; margin-top:50px;">Collège & Lycée (6ème → Terminale)</h3>
+    <div class="courses">
+        <div class="course"><h4>Mathématiques</h4><p>Cours complets, exercices corrigés et préparation aux examens.</p></div>
+        <div class="course"><h4>Physique-Chimie</h4><p>Expériences et théorie claire.</p></div>
+        <div class="course"><h4>SVT</h4><p>Cours interactifs et ludiques.</p></div>
+        <div class="course"><h4>Français</h4><p>Expression écrite, lecture, grammaire et rédaction.</p></div>
+    </div>
+</section>
+
+<section id="inscription">
+    <h2>Inscription</h2>
+    <form>
+        <input type="text" name="nom" placeholder="Nom" required>
+        <input type="text" name="prenom" placeholder="Prénom" required>
+        <input type="number" name="age" placeholder="Âge" required>
+        <input type="text" name="classe" placeholder="Classe / Niveau" required>
+        <label>Matières souhaitées :</label>
+        <select multiple>
+            <option>Maths</option>
+            <option>Physique-Chimie</option>
+            <option>SVT</option>
+            <option>Français</option>
+            <option>Sciences élémentaires</option>
+        </select>
+        <label>Mode de cours préféré :</label>
+        <select>
+            <option>À domicile</option>
+            <option>En ligne</option>
+        </select>
+        <input type="text" name="contact" placeholder="Téléphone / Email" required>
+        <textarea name="commentaires" placeholder="Commentaires"></textarea>
+        <input type="submit" value="Envoyer">
+    </form>
+</section>
+
+<section id="apropos">
+    <h2>À propos</h2>
+    <p style="max-width:700px; margin:auto; text-align:center;">Mission : Encourager les filles à réussir en sciences et dans toutes les matières scolaires.</p>
+    <p style="max-width:700px; margin:auto; text-align:center;">Valeurs : Éducation, Égalité, Motivation et Succès.</p>
+    <p style="max-width:700px; margin:auto; text-align:center;">Pourquoi nous choisir : Cours personnalisés, suivi régulier, groupes réduits et enseignants qualifiés.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p style="text-align:center;">Email : contact@scientifiquegirls.com</p>
+    <p style="text-align:center;">Téléphone : +221 XXX XXX XXX</p>
+    <p style="text-align:center;">WhatsApp : +221 XXX XXX XXX</p>
+</section>
+
+<section id="blog">
+    <h2>Blog & Actualités</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">Découvrez nos astuces de révision, exercices corrigés, mini-challenges scientifiques et témoignages de réussite de nos élèves.</p>
+</section>
+
+</body>
+</html>
